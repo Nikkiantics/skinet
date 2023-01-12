@@ -15,17 +15,12 @@ using API.Helpers;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
-        private readonly object _brandId;
         private readonly IGenericRepository<ProductType> _productTypeRepo;
         private readonly IGenericRepository<Product> _productsRepo;
         private readonly IMapper _mapper;
-        private object brandId;
-        private int totalItems;
 
         public ProductsController(IGenericRepository<Product> productsRepo,
             IGenericRepository<ProductType> productTypeRepo,
@@ -36,7 +31,6 @@ namespace API.Controllers
             _productsRepo = productsRepo;
             _productTypeRepo = productTypeRepo;
             _productBrandRepo = productBrandRepo;
-            
         }
 
         [HttpGet]
@@ -44,17 +38,16 @@ namespace API.Controllers
             [FromQuery]ProductSpecParams productParams)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
-            var countSpec = new ProductWithFiltersForCountSpecification(productParams);
+            var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
 
-            var toItems = await _productsRepo.CountAsync(countSpec);
-            
+            var totalItems = await _productsRepo.CountAsync(countSpec);
+
             var products = await _productsRepo.ListAsync(spec);
 
             var data = _mapper.Map<IReadOnlyList<ProductToReturnDto>>(products);
 
-            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex,
-             productParams.PageSize, totalItems, data));
-            
+            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, 
+                productParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]
@@ -65,6 +58,7 @@ namespace API.Controllers
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
 
             var product = await _productsRepo.GetEntityWithSpec(spec);
+
             if (product == null) return NotFound(new ApiResponse(404));
 
             return _mapper.Map<ProductToReturnDto>(product);
