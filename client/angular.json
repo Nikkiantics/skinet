@@ -30,6 +30,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -67,8 +70,9 @@
             "production": {
               "browserTarget": "client:build:production",
               "sslKey": "ssl/server.key",
-              "sslCert": "ssl/server.ctr",
+              "sslCert": "ssl/server.crt",
               "ssl": true
+            
             },
             "development": {
               "browserTarget": "client:build:development"
