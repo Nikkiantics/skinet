@@ -64,16 +64,16 @@ namespace API.Controllers
             return _mapper.Map<ProductToReturnDto>(product);
         }
 
-        [HttpGet("brands")]
-        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
-        {
-            return Ok(await _productBrandRepo.ListAllAsync());
-        }
+        // [HttpGet("brands")]
+        // public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
+        // {
+        //     return Ok(await _productBrandRepo.ListAllAsync());
+        // }
 
-        [HttpGet("types")]
-        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetTypes()
-        {
-            return Ok(await _productTypeRepo.ListAllAsync());
-        }
+        // [HttpGet("types")]
+        // public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetTypes()
+        // {
+        //     return Ok(await _productTypeRepo.ListAllAsync());
+        // }
     }
 }
