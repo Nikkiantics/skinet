@@ -13,6 +13,7 @@ using API.Errors;
 using Microsoft.AspNetCore.Http;
 using API.Helpers;
 
+
 namespace API.Controllers
 {
     public class ProductsController : BaseApiController
@@ -31,6 +32,7 @@ namespace API.Controllers
             _productsRepo = productsRepo;
             _productTypeRepo = productTypeRepo;
             _productBrandRepo = productBrandRepo;
+
         }
 
         [HttpGet]
@@ -43,6 +45,7 @@ namespace API.Controllers
             var totalItems = await _productsRepo.CountAsync(countSpec);
 
             var products = await _productsRepo.ListAsync(spec);
+
 
             var data = _mapper.Map<IReadOnlyList<ProductToReturnDto>>(products);
 
@@ -64,16 +67,16 @@ namespace API.Controllers
             return _mapper.Map<ProductToReturnDto>(product);
         }
 
-        // [HttpGet("brands")]
-        // public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
-        // {
-        //     return Ok(await _productBrandRepo.ListAllAsync());
-        // }
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
+        {
+            return Ok(await _productBrandRepo.ListAllAsync());
+        }
 
-        // [HttpGet("types")]
-        // public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetTypes()
-        // {
-        //     return Ok(await _productTypeRepo.ListAllAsync());
-        // }
+        [HttpGet("types")]
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetTypes()
+        {
+            return Ok(await _productTypeRepo.ListAllAsync());
+        }
     }
 }

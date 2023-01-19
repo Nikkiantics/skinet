@@ -26,12 +26,8 @@
         </section>
         <section class="col-9">
             <div class="d-flex justify-content-between align-items-center pb-2">
-            
-                <app-paging-header 
-                [totalCount]="totalCount" 
-                [pageSize]="shopParams.pageSize"
-                [pageNumber]="shopParams.pageNumber">
-                </app-paging-header>
+                <app-paging-header [totalCount]="totalCount" [pageSize]="shopParams.pageSize"
+                    [pageNumber]="shopParams.pageNumber"></app-paging-header>
 
                 <div class="form-inline mt-2">
                     <input (keyup.enter)="onSearch()" type="text" class="form-control mr-2" #search placeholder="Search">
@@ -46,22 +42,9 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center" *ngIf="totalCount > 0">
-                <app-pager 
-                [pageSize]="shopParams.pageSize" 
-                [totalCount]="totalCount"
+                <app-pager [pageSize]="shopParams.pageSize" [totalCount]="totalCount"
                     (pageChanged)="onPageChanged($event)"></app-pager>
             </div>
-
-    <div class="d-flex justify-content-center">        
-        <pagination [boundaryLinks]="true" 
-        [totalItems]="77"
-            previousText="&lsaquo;" 
-            nextText="&rsaquo;" 
-            firstText="&laquo;" 
-            lastText="&raquo;">
- 
-        </pagination></div>
-
 
         </section>
     </div>
