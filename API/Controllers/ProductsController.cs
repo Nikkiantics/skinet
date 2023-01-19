@@ -13,7 +13,6 @@ using API.Errors;
 using Microsoft.AspNetCore.Http;
 using API.Helpers;
 
-
 namespace API.Controllers
 {
     public class ProductsController : BaseApiController
@@ -32,7 +31,6 @@ namespace API.Controllers
             _productsRepo = productsRepo;
             _productTypeRepo = productTypeRepo;
             _productBrandRepo = productBrandRepo;
-
         }
 
         [HttpGet]
@@ -42,10 +40,9 @@ namespace API.Controllers
             var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
             var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
 
-            var totalItems = await _productsRepo.CountAsync(countSpec);
+            var totalItems = await _productsRepo.CountAsync(spec);
 
             var products = await _productsRepo.ListAsync(spec);
-
 
             var data = _mapper.Map<IReadOnlyList<ProductToReturnDto>>(products);
 
