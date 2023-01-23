@@ -26,6 +26,10 @@ export class ShopService {
       params = params.append('typeId', shopParams.typeId.toString())
     }
 
+    if (shopParams.products !== 0) {
+      params = params.append('products', shopParams.products.toString())
+    }
+
     if (shopParams.search) {
       params = params.append('search', shopParams.search)
     }
