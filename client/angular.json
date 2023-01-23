@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "client"
+  "defaultProject": "client",
+  "cli": {
+    "analytics": "403f9a6e-96e0-4209-bf6e-544bbed22d16"
+  }
 }
