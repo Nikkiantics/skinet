@@ -5,10 +5,13 @@
         <p class="font-weight-bold">This error comes from the server - not Angular</p>
         <p>What to do next?</p>
         <ol>
+            <li>Open chrome dev tools</li>
+            <li>Check the failing request</li>
+            <li>Examine this request URL - make sure it is correct</li>
             <li>Check the network tab in chrome dev tools</li>
             <li>Reproduce the request in postman - if the same error occurs then definately not angular!</li>
         </ol>
-        <h5>Stack trace</h5>
+        <h5>Follow the stack trace - this is where your investiation should start</h5>
         <code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
     </ng-container>
 </div>
