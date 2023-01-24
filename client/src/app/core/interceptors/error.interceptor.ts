@@ -37,8 +37,8 @@ export class ErrorInterceptor implements HttpInterceptor {
             this.router.navigateByUrl('/server-error', navigationExtras);
           }
         }
-        return throwError(() => new Error(error.message))
+        return throwError(() => new Error(error.message));
       })
-    )
+    );
   }
 }
