@@ -22,9 +22,5 @@
   {
     "Id": 6,
     "Name": "Redis"
-  },
-  {
-    "Id": 7,
-    "Name": "Edge"
   }
 ]
