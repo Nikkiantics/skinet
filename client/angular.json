@@ -88,7 +88,7 @@
           "options": {
             "sslCert": "ssl/localhost.pem",
             "sslKey": "ssl/localhost-key.pem",
-            "ssl": false
+            "ssl": true
           },
           "configurations": {
             "production": {
@@ -129,6 +129,6 @@
     }
   },
   "cli": {
-    "analytics": "c0d1f861-63a2-4c14-8c4d-581d56f9ba92"
+    "analytics": "7dc84d11-a438-4081-b6fc-fa68143209cc"
   }
 }
