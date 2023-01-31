@@ -44,15 +44,13 @@ export class ProductDetailsComponent implements OnInit {
       error: error => console.log(error)
     })
   }
-  
+
   incrementQuantity() {
     this.quantity++;
   }
 
   decrementQuantity() {
-    if (this.quantity > 0)
-    {this.quantity--;
-    }
+    this.quantity--;
   }
 
   updateBasket() {
