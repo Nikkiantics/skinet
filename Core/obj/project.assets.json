@@ -773,11 +773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nicol\\skinet\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\nicol\\skinet\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "c:\\Users\\nicol\\skinet\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\nicol\\skinet\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nicol\\skinet\\Core\\obj\\",
+      "outputPath": "C:\\Users\\nicol\\skinet\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
