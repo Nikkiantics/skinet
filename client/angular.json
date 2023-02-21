@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "cuid"
+            ],
             "outputPath": "dist/client",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -117,8 +120,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "db07df78-d3e6-4e63-933a-14189b7a7c3e"
   }
 }

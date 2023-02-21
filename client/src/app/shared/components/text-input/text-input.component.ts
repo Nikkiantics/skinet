@@ -6,10 +6,9 @@ import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
   templateUrl: './text-input.component.html',
   styleUrls: ['./text-input.component.scss']
 })
-export class TextInputComponent implements ControlValueAccessor{
+export class TextInputComponent implements ControlValueAccessor {
   @Input() type = 'text';
   @Input() label = '';
-
 
   constructor(@Self() public controlDir: NgControl) {
     this.controlDir.valueAccessor = this;
@@ -21,8 +20,8 @@ export class TextInputComponent implements ControlValueAccessor{
   }
   registerOnTouched(fn: any): void {
   }
-  
-  get control(): FormControl{
+
+  get control(): FormControl {
     return this.controlDir.control as FormControl
   }
 

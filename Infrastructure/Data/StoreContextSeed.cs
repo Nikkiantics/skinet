@@ -36,6 +36,7 @@ namespace Infrastructure.Data
                 var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(deliveryData);
                 context.DeliveryMethods.AddRange(methods);
             }
+
             if (context.ChangeTracker.HasChanges()) await context.SaveChangesAsync();
         }
     }

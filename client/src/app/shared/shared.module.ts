@@ -9,7 +9,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TextInputComponent } from './components/text-input/text-input.component';
 
-
 @NgModule({
   declarations: [
     PagingHeaderComponent,
