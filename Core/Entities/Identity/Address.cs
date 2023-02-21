@@ -10,6 +10,6 @@ namespace Core.Entities.Identity
         public string State { get; set; }
         public string Zipcode { get; set; }
         public string AppUserId { get; set; }
-        public AppUser AppUser { get; set; }
+        public string AppUser { get; set; }
     }
 }
