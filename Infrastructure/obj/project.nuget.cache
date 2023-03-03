@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mxpD+P3dxilnO4FRRNLe4mM51BsArn8qVSl2TdOmJeyTKaTmzeMdP0QajRRcbGjxJQJg5qunEAVC0VlwSmblmA==",
+  "dgSpecHash": "Xi5pAtayZK8ulPtpNlaMGTthHGTouTEXs2xtsOlhb5Ys4UQagYZn+rq3WiA9VTy7kIGu5t9boT/zfOYxZcIlKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -58,7 +58,7 @@
     "C:\\Users\\nicol\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
-    "C:\\Users\\nicol\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\stackexchange.redis\\2.6.96\\stackexchange.redis.2.6.96.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.25.1\\system.identitymodel.tokens.jwt.6.25.1.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
