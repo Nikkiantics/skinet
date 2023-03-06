@@ -1215,7 +1215,7 @@
           }
         }
       },
-      "Stripe.net/41.3.0": {
+      "Stripe.net/41.8.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
@@ -1653,7 +1653,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.0",
           "Microsoft.IdentityModel.Tokens": "6.25.1",
           "StackExchange.Redis": "2.6.86",
-          "Stripe.net": "41.3.0",
+          "Stripe.net": "41.8.0",
           "System.IdentityModel.Tokens.Jwt": "6.25.1"
         },
         "compile": {
@@ -3232,10 +3232,10 @@
         "stackexchange.redis.nuspec"
       ]
     },
-    "Stripe.net/41.3.0": {
-      "sha512": "+GQt1zQxkyphG+49c2SV8+18wTfIOhct//94p5VpXVUuDMody7rIgR0mN3ygNJabDHnsHvFE04JIrGXzG5pg1w==",
+    "Stripe.net/41.8.0": {
+      "sha512": "WCvIU0lgsSnbdEE5vNKisk0EAshlREG1KAwq9bWwwFMip7xsq4NSZpUE01IsJ49HixxAeuo9DShnI3JwdW4yRw==",
       "type": "package",
-      "path": "stripe.net/41.3.0",
+      "path": "stripe.net/41.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3251,7 +3251,7 @@
         "lib/netcoreapp3.1/Stripe.net.xml",
         "lib/netstandard2.0/Stripe.net.dll",
         "lib/netstandard2.0/Stripe.net.xml",
-        "stripe.net.41.3.0.nupkg.sha512",
+        "stripe.net.41.8.0.nupkg.sha512",
         "stripe.net.nuspec"
       ]
     },
@@ -4083,11 +4083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nicol\\skinet\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\nicol\\skinet\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\nicol\\skinet\\API\\API.csproj",
+      "projectPath": "C:\\Users\\nicol\\skinet\\API\\API.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nicol\\skinet\\API\\obj\\",
+      "outputPath": "C:\\Users\\nicol\\skinet\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4104,8 +4104,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "c:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

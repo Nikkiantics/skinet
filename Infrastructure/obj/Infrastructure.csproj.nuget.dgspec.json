@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nicol\\skinet\\Core\\Core.csproj": {
+    "C:\\Users\\nicol\\skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nicol\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\nicol\\skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "c:\\Users\\nicol\\skinet\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\nicol\\skinet\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nicol\\skinet\\Core\\obj\\",
+        "outputPath": "C:\\Users\\nicol\\skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "c:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "c:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\nicol\\skinet\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nicol\\skinet\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\nicol\\skinet\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\nicol\\skinet\\Core\\Core.csproj": {
-                "projectPath": "c:\\Users\\nicol\\skinet\\Core\\Core.csproj"
+              "C:\\Users\\nicol\\skinet\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\nicol\\skinet\\Core\\Core.csproj"
               }
             }
           }
@@ -123,7 +123,7 @@
             },
             "Stripe.net": {
               "target": "Package",
-              "version": "[41.3.0, )"
+              "version": "[41.8.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
